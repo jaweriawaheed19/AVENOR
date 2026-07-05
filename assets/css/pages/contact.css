@@ -1,0 +1,444 @@
+/* ==========================================
+   CONTACT HERO
+========================================== */
+
+.contact-hero{
+
+    padding:8rem 0 3rem;
+    background:var(--color-bg-secondary);
+    text-align:center;
+
+}
+
+.contact-hero h1{
+
+    margin:1rem 0;
+
+    font-size:clamp(2.3rem,4vw,3.6rem);
+
+}
+
+.contact-hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact-section{
+
+    padding:3rem 0;
+
+}
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:4rem;
+
+    align-items:start;
+
+}
+
+
+
+/* ==========================================
+   CONTACT INFO
+========================================== */
+
+.contact-info h2{
+
+    margin-bottom:1rem;
+
+}
+
+.contact-info>p{
+
+    color:var(--color-text-light);
+
+    margin-bottom:2rem;
+
+}
+
+.info-item{
+
+    display:flex;
+
+    gap:1rem;
+
+    margin-bottom:2rem;
+
+    align-items:flex-start;
+
+}
+
+.info-item i{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--color-bg-secondary);
+
+    color:var(--color-primary);
+
+    font-size:1.35rem;
+
+}
+
+.info-item h4{
+
+    margin-bottom:.3rem;
+
+}
+
+.info-item p{
+
+    color:var(--color-text-light);
+
+}
+
+
+
+/* ==========================================
+   FORM CARD
+========================================== */
+
+.contact-card{
+
+    background:#fff;
+
+    padding:2.5rem;
+
+    border-radius:20px;
+
+    border:1px solid var(--color-border);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.06);
+
+}
+
+.contact-card h2{
+
+    margin-bottom:.5rem;
+
+}
+
+.contact-card>p{
+
+    margin-bottom:2rem;
+
+    color:var(--color-text-light);
+
+}
+
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:1.3rem;
+
+}
+
+.form-group label{
+
+    margin-bottom:.45rem;
+
+    font-weight:500;
+
+}
+
+.form-group input,
+
+.form-group textarea{
+
+    padding:1rem;
+
+    border:1px solid var(--color-border);
+
+    border-radius:12px;
+
+    font-size:.95rem;
+
+    transition:.3s;
+
+    resize:none;
+
+    font-family:inherit;
+
+}
+
+.form-group input:focus,
+
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:var(--color-primary);
+
+}
+
+.contact-card .btn-primary{
+
+    width:100%;
+
+}
+
+
+
+/* ==========================================
+   MAP
+========================================== */
+
+.map-section{
+
+    padding:3rem 0;
+
+    text-align:center;
+
+}
+
+.map-section h2{
+
+    margin-bottom:.7rem;
+
+}
+
+.map-section p{
+
+    margin-bottom:2rem;
+
+    color:var(--color-text-light);
+
+}
+
+.map-section iframe{
+
+    width:100%;
+
+    height:450px;
+
+    border:none;
+
+    border-radius:20px;
+
+}
+
+
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq-section{
+
+    padding:3rem 0;
+
+}
+
+.faq-item{
+
+    border-bottom:1px solid var(--color-border);
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:1.4rem 0;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.faq-question i{
+
+    transition:.3s;
+
+}
+
+.faq-answer{
+
+    display:none;
+
+    padding-bottom:1.3rem;
+
+    color:var(--color-text-light);
+
+    line-height:1.8;
+
+}
+
+.faq-item.active .faq-answer{
+
+    display:block;
+
+}
+
+.faq-item.active i{
+
+    transform:rotate(45deg);
+
+}
+
+.faq-section .section-title{
+
+    text-align:center;
+
+    margin-bottom:3.5rem;
+
+}
+
+.faq-section .section-title small{
+
+    display:block;
+
+    color:var(--color-primary);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:1rem;
+
+}
+
+.faq-section .section-title h2{
+
+    margin:0;
+
+}
+
+
+/* ==========================================
+   CTA
+========================================== */
+
+.contact-cta{
+
+    padding:4.5rem 0;
+
+    text-align:center;
+
+    background:var(--color-bg-secondary);
+
+}
+
+.contact-cta h2{
+
+    margin-bottom:1rem;
+
+}
+
+.contact-cta p{
+
+    max-width:650px;
+
+    margin:0 auto 2rem;
+
+    color:var(--color-text-light);
+
+}
+
+
+
+/* ==========================================
+   VALIDATION
+========================================== */
+
+.error-message{
+
+    min-height:18px;
+
+    color:#c62828;
+
+    font-size:.82rem;
+
+    margin-top:.3rem;
+
+}
+
+.input-error{
+
+    border-color:#c62828 !important;
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-card{
+
+    padding:2rem;
+
+}
+
+.contact-hero{
+
+    padding:4rem 0 2.5rem;
+
+}
+
+.map-section iframe{
+
+    height:320px;
+
+}
+
+}

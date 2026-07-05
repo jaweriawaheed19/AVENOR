@@ -1,0 +1,198 @@
+/* ==========================================
+   AVENOR DESIGN SYSTEM
+   base.css
+========================================== */
+
+/* ==========================================
+   GOOGLE FONTS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:var(--font-body);
+
+    background:var(--color-background);
+
+    color:var(--color-text);
+
+    line-height:1.6;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img{
+
+    display:block;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+/* ==========================================
+   LISTS
+========================================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:var(--font-heading);
+
+    font-weight:600;
+
+    line-height:1.2;
+
+}
+
+
+h1{
+
+    font-size:var(--fs-h1);
+
+}
+
+h2{
+
+    font-size:var(--fs-h2);
+
+}
+
+h3{
+
+    font-size:var(--fs-h3);
+
+}
+
+h4{
+
+    font-size:var(--fs-h4);
+
+}
+
+h5{
+
+    font-size:var(--fs-h5);
+
+}
+
+
+p{
+
+    color:var(--color-text-light);
+
+    font-size:var(--fs-body);
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}

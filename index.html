@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AVENOR | Timeless Fashion</title>
+
+    <meta name="description"
+        content="Timeless fashion inspired by old money elegance and modern minimalism.">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/pages/wishlist.css">
+    <link rel="stylesheet" href="assets/css/pages/home.css">
+    <link rel="stylesheet" href="assets/css/pages/shop.css">
+    <link rel="stylesheet" href="assets/css/pages/search.css">
+
+    <!-- Google Fonts -->
+    <!-- We will replace these with local fonts later -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Announcement Bar -->
+
+        <div class="announcement-bar">
+
+            <div class="container">
+
+                <p>
+                    Complimentary Delivery • Orders Above Rs. 10,000
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="navbar">
+
+            <div class="container nav-container">
+
+                <!-- Mobile Menu -->
+
+                <button class="menu-btn">
+
+                    <i class="ri-menu-line"></i>
+
+                </button>
+
+                <!-- Logo -->
+
+                <a href="index.html" class="logo">
+
+                    AVENOR
+
+                </a>
+
+                <!-- Desktop Navigation -->
+
+                <ul class="nav-links">
+
+                    <li><a class="active" href="index.html">Home</a></li>
+
+                    <li><a href="shop.html">Shop</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+                <!-- Icons -->
+
+                <div class="nav-icons">
+
+                    <button
+    id="searchBtn"
+    aria-label="Search">
+
+    <i class="ri-search-line"></i>
+
+</button>
+                    
+                    <button class="cart-btn navbar-wishlist" id="wishlistButton">
+
+    <i class="ri-heart-line"></i>
+
+    <span class="cart-count" id="wishlistCount">0</span>
+
+</button>
+
+<button class="cart-btn" id="cartButton">
+
+    <i class="ri-shopping-bag-line"></i>
+
+    <span class="cart-count" id="cartCount">0</span>
+
+</button>
+                    
+                    <button
+    aria-label="Account"
+    onclick="window.location.href='login.html'">
+
+    <i class="ri-user-line"></i>
+
+</button>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- ======================================
+         HERO SECTION
+         ====================================== -->
+         
+         <section class="hero reveal">
+            
+            <div class="container hero-content">
+                
+                <span class="hero-subtitle">
+                    MODERN ESSENTIALS • CURATED LUXURY
+                </span>
+                
+                <h1>
+                    Timeless Elegance<br>
+                    for Modern Living
+                </h1>
+                
+                <p>
+                    Discover thoughtfully curated fashion inspired by
+                    old money sophistication, vintage charm,
+                    and contemporary minimalism.
+                </p>
+                
+                <div class="hero-buttons">
+                    
+                    <a href="shop.html" class="btn-primary">
+                        Shop Collection
+                    </a>
+                    
+                    <a href="#featured-products" class="btn-secondary">
+                        Explore Collections
+                    </a>
+                
+                </div>
+            
+            </div>
+
+            <div class="scroll-indicator">
+                
+                <span></span>
+            
+            </div>
+        
+        </section>
+
+        <!-- ======================================
+         FEATURED CATEGORIES
+         ====================================== -->
+         
+         <section class="featured-categories reveal">
+            
+            <div class="container">
+                
+                <div class="section-title">
+                    
+                    <small>Shop by Category</small>
+                    
+                    <h2>Curated for Every Style</h2>
+                    
+                    <p>
+                        Discover timeless essentials thoughtfully selected for
+                        every wardrobe, every season, and every occasion.
+                    </p>
+                
+                </div>
+                
+                <div class="categories-grid">
+                    
+                    <!-- Women -->
+                     
+                    <a href="shop.html?category=women" class="category-card">
+                        
+                        <img src="assets/images/categories/women.webp" alt="Women's Collection">
+                        
+                        <div class="category-overlay">
+                            
+                            <div class="category-text">
+                                
+                                <h3>Women's Clothing</h3>
+                                
+                                <span>Explore →</span>
+                            
+                            </div>
+                        
+                        </div>
+                    
+                    </a>
+
+                   <!-- Men -->
+
+                    <a href="shop.html?category=men" class="category-card">
+                        
+                        <img src="assets/images/categories/men.webp" alt="Men's Collection">
+                        
+                        <div class="category-overlay">
+                            
+                            <div class="category-text">
+                                
+                                <h3>Men's Clothing</h3>
+                                
+                                <span>Explore →</span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Footwear -->
+
+                    <a href="shop.html?category=footwear" class="category-card">
+
+                        <img src="assets/images/categories/footwear.webp" alt="Footwear">
+
+                        <div class="category-overlay">
+
+                            <div class="category-text">
+
+                                <h3>Footwear</h3>
+
+                                <span>Explore →</span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Fragrances -->
+
+                    <a href="shop.html?category=fragrances" class="category-card">
+
+                        <img src="assets/images/categories/fragrance.webp" alt="Fragrances">
+
+                        <div class="category-overlay">
+
+                            <div class="category-text">
+
+                                <h3>Fragrances</h3>
+
+                                <span>Explore →</span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Accessories -->
+
+                    <a href="shop.html?category=accessories" class="category-card">
+
+                        <img src="assets/images/categories/accessories.webp" alt="Accessories">
+
+                        <div class="category-overlay">
+
+                            <div class="category-text">
+
+                                <h3>Accessories</h3>
+
+                                <span>Explore →</span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Bags -->
+
+                    <a href="shop.html?category=bags" class="category-card">
+
+                        <img src="assets/images/categories/bags.webp" alt="Bags">
+
+                        <div class="category-overlay">
+
+                            <div class="category-text">
+
+                                <h3>Bags</h3>
+
+                                <span>Explore →</span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="brand-values reveal">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <small>
+
+                OUR PHILOSOPHY
+
+            </small>
+
+            <h2>
+
+                Designed With Purpose
+
+            </h2>
+
+            <p>
+
+                Every AVENOR piece is created with timeless aesthetics,
+                premium materials, and attention to every detail.
+
+            </p>
+
+        </div>
+
+        <div class="values-grid">
+
+            <article class="value-card">
+
+                <div class="value-icon">
+
+                    <i class="ri-award-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Timeless Design
+
+                </h3>
+
+                <p>
+
+                    Contemporary silhouettes inspired by enduring elegance,
+                    designed to transcend seasonal trends.
+
+                </p>
+
+            </article>
+
+            <article class="value-card">
+
+                <div class="value-icon">
+
+                    <i class="ri-leaf-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Premium Materials
+
+                </h3>
+
+                <p>
+
+                    Carefully selected fabrics and materials chosen
+                    for comfort, quality, and refined luxury.
+
+                </p>
+
+            </article>
+
+            <article class="value-card">
+
+                <div class="value-icon">
+
+                    <i class="ri-scissors-cut-line"></i>
+
+                </div>
+
+                <h3>
+
+                    Thoughtful Craftsmanship
+
+                </h3>
+
+                <p>
+
+                    Every stitch and every detail reflects
+                    our commitment to exceptional craftsmanship.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="editorial-banner reveal">
+
+    <div class="editorial-overlay">
+
+        <p class="editorial-tag">
+
+            AVENOR JOURNAL
+
+        </p>
+
+        <h2>
+
+            Designed For Every Moment
+
+        </h2>
+
+        <p>
+
+            Timeless pieces created to accompany every season,
+            every journey, and every chapter of your story.
+
+        </p>
+
+        <a href="shop.html" class="btn-primary">
+
+            Explore Collection
+
+        </a>
+
+    </div>
+
+</section>
+
+        <!-- ======================================
+        FEATURED PRODUCTS
+        ====================================== -->
+
+        <section id="featured-products" class="featured-products reveal">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <small>CURATED SELECTION</small>
+
+                    <h2>Featured Products</h2>
+
+                    <p>
+                    Thoughtfully selected pieces crafted for timeless wardrobes.
+                    </p>
+
+                </div>
+
+                <div class="products-grid" id="productsGrid">
+
+                 <!-- Products will come from JavaScript -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="testimonials reveal">
+
+    <div class="container">
+
+        <div class="section-header">
+
+    <p class="section-tag">
+
+        CLIENT EXPERIENCES
+
+    </p>
+
+    <h2 class="section-title">
+
+        Loved By Our Customers
+
+    </h2>
+
+    <p class="section-description">
+
+        Thoughtful craftsmanship and timeless design have earned the trust of customers across Pakistan.
+
+    </p>
+
+</div>
+
+        <div class="testimonial-grid">
+
+            <article class="testimonial-card">
+
+                <div class="stars">
+
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+
+                </div>
+
+                <p class="testimonial-text">
+
+                    "The fabric quality honestly exceeded my expectations. The stitching is neat, the fit is exactly as described, and the packaging felt premium without being excessive."
+
+                </p>
+
+                <div class="testimonial-author">
+
+                    <h4>
+
+                        Ayesha K.
+
+                    </h4>
+
+                    <span>
+
+                        Islamabad
+
+                    </span>
+
+                </div>
+
+            </article>
+
+            <article class="testimonial-card">
+
+                <div class="stars">
+
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+
+                </div>
+
+                <p class="testimonial-text">
+
+                    "I ordered a handbag and it looked exactly like the photos. Delivery was smooth and the quality definitely justifies the price."
+
+                </p>
+
+                <div class="testimonial-author">
+
+                    <h4>
+
+                        Hira S.
+
+                    </h4>
+
+                    <span>
+
+                        Lahore
+
+                    </span>
+
+                </div>
+
+            </article>
+
+            <article class="testimonial-card">
+
+                <div class="stars">
+
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+
+                </div>
+
+                <p class="testimonial-text">
+
+                    "Customer support answered my sizing questions quickly and the outfit fit perfectly. It's refreshing to find a local brand that pays attention to both design and service."
+
+                </p>
+
+                <div class="testimonial-author">
+
+                    <h4>
+
+                        Maham R.
+
+                    </h4>
+
+                    <span>
+
+                        Karachi
+
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==========================================
+     THE AVENOR EDIT
+========================================== -->
+
+<section class="lookbook reveal">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <p class="section-tag">
+
+                THE AVENOR EDIT
+
+            </p>
+
+            <h2 class="section-title">
+
+                Beyond the Wardrobe
+
+            </h2>
+
+            <p class="section-description">
+
+                Moments of understated luxury. A glimpse into the lifestyle that inspires every AVENOR collection.
+
+            </p>
+
+        </div>
+
+        <div class="lookbook-grid">
+
+            <a href="#" class="lookbook-card">
+
+                <img
+                    src="assets/images/lookbook/lookbook-1.webp"
+                    alt="Luxury Lifestyle">
+
+                <div class="lookbook-overlay">
+
+                    <i class="ri-instagram-line"></i>
+
+                    <span>@avenor.pk</span>
+
+                </div>
+
+            </a>
+
+            <a href="#" class="lookbook-card">
+
+                <img
+                    src="assets/images/lookbook/lookbook-2.webp"
+                    alt="Luxury Lifestyle">
+
+                <div class="lookbook-overlay">
+
+                    <i class="ri-instagram-line"></i>
+
+                    <span>@avenor.pk</span>
+
+                </div>
+
+            </a>
+
+            <a href="#" class="lookbook-card">
+
+                <img
+                    src="assets/images/lookbook/lookbook-3.webp"
+                    alt="Luxury Lifestyle">
+
+                <div class="lookbook-overlay">
+
+                    <i class="ri-instagram-line"></i>
+
+                    <span>@avenor.pk</span>
+
+                </div>
+
+            </a>
+
+            <a href="#" class="lookbook-card">
+
+                <img
+                    src="assets/images/lookbook/lookbook-4.webp"
+                    alt="Luxury Lifestyle">
+
+                <div class="lookbook-overlay">
+
+                    <i class="ri-instagram-line"></i>
+
+                    <span>@avenor.pk</span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    </main>
+
+
+    <div class="toast" id="toast">
+
+    <div class="toast-icon">
+
+        <i class="ri-checkbox-circle-fill"></i>
+
+    </div>
+
+    <div class="toast-content">
+
+        <h4>Added to Cart</h4>
+
+        <p id="toastProduct"></p>
+
+        <a href="cart.html">
+
+            View Cart →
+
+        </a>
+
+    </div>
+</div>
+
+<!-- ==========================================
+     SEARCH OVERLAY
+========================================== -->
+
+<div id="searchOverlay" class="search-overlay">
+
+    <div class="search-box">
+
+        <button
+            id="closeSearch"
+            class="close-search">
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+        <h2>
+
+            Search Products
+
+        </h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search AVENOR...">
+
+        <div id="searchResults">
+
+        </div>
+
+    </div>
+
+</div>
+    
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/wishlist.js"></script>
+    <script src="assets/js/productCard.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- ==========================================
+FOOTER
+========================================== -->
+
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+
+                    AVENOR
+
+                </a>
+
+                <p>
+
+                    Timeless luxury crafted for modern living.
+                    Thoughtfully designed pieces that blend elegance,
+                    quality, and modern sophistication.
+
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+
+                    <a href="#"><i class="ri-pinterest-line"></i></a>
+
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>
+
+                    Shop
+
+                </h4>
+
+                <a href="shop.html">Women</a>
+
+                <a href="shop.html">Men</a>
+
+                <a href="shop.html">Accessories</a>
+
+                <a href="shop.html">Footwear</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>
+
+                    Customer Care
+
+                </h4>
+
+                <a href="contact.html">Contact Us</a>
+
+                <a href="#">FAQs</a>
+
+                <a href="#">Shipping</a>
+
+                <a href="#">Returns</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>
+
+                    Company
+
+                </h4>
+
+                <a href="about.html">About Us</a>
+
+                <a href="account.html">My Account</a>
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-newsletter">
+
+            <div>
+
+                <h3>
+
+                    Join the AVENOR Community
+
+                </h3>
+
+                <p>
+
+                    Receive exclusive collections, style inspiration and early access to new arrivals.
+
+                </p>
+
+            </div>
+
+            <form class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email address">
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 AVENOR. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+</body>
+
+</html>

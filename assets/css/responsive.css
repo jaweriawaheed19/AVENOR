@@ -1,0 +1,128 @@
+/* ==========================================
+   AVENOR DESIGN SYSTEM
+   responsive.css
+========================================== */
+
+/* ==========================================
+   LARGE LAPTOPS
+========================================== */
+
+@media (max-width: 1400px){
+
+    :root{
+
+        --fs-hero:3.6rem;
+        --fs-h1:2.8rem;
+        --fs-h2:2.3rem;
+
+    }
+
+}
+
+/* ==========================================
+   LAPTOPS
+========================================== */
+
+@media (max-width:1200px){
+
+    :root{
+
+        --fs-hero:3.2rem;
+        --fs-h1:2.5rem;
+        --fs-h2:2.1rem;
+
+    }
+
+}
+
+/* ==========================================
+   TABLETS
+========================================== */
+
+@media (max-width:991px){
+
+    :root{
+
+        --fs-hero:2.8rem;
+        --fs-h1:2.2rem;
+        --fs-h2:1.9rem;
+        --fs-h3:1.6rem;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        padding:.9rem 1.7rem;
+
+    }
+
+    .section-title{
+
+        margin-bottom:2.5rem;
+
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:767px){
+
+    :root{
+
+        --fs-hero:2.2rem;
+        --fs-h1:1.9rem;
+        --fs-h2:1.6rem;
+        --fs-h3:1.35rem;
+        --fs-body:0.95rem;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .product-content{
+
+        padding:1rem;
+
+    }
+
+    .wishlist-btn{
+
+        width:38px;
+        height:38px;
+
+    }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+    :root{
+
+        --fs-hero:1.9rem;
+        --fs-h1:1.7rem;
+        --fs-h2:1.45rem;
+
+    }
+
+    .container{
+
+        padding:0 .8rem;
+
+    }
+
+}

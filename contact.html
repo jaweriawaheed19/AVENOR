@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | AVENOR</title>
+
+    <!-- Remix Icons -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <!-- Global CSS -->
+     <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/pages/wishlist.css">
+        <link rel="stylesheet" href="assets/css/pages/search.css">
+
+
+    <!-- Contact Page CSS -->
+
+    <link rel="stylesheet" href="assets/css/pages/contact.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Announcement Bar -->
+
+        <div class="announcement-bar">
+
+            <div class="container">
+
+                <p>
+                    Complimentary Delivery • Orders Above Rs. 10,000
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <nav class="navbar">
+
+            <div class="container nav-container">
+
+                <!-- Mobile Menu -->
+
+                <button class="menu-btn">
+
+                    <i class="ri-menu-line"></i>
+
+                </button>
+
+                <!-- Logo -->
+
+                <a href="index.html" class="logo">
+
+                    AVENOR
+
+                </a>
+
+                <!-- Desktop Navigation -->
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="shop.html">Shop</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a class="active" href="contact.html">Contact</a></li>
+
+                </ul>
+
+                <!-- Icons -->
+
+                <div class="nav-icons">
+
+                    <button
+    id="searchBtn"
+    aria-label="Search">
+
+    <i class="ri-search-line"></i>
+
+</button>
+                    
+                    <button class="cart-btn navbar-wishlist" id="wishlistButton">
+
+    <i class="ri-heart-line"></i>
+
+    <span class="cart-count" id="wishlistCount">0</span>
+
+</button>
+
+<button class="cart-btn" id="cartButton">
+
+    <i class="ri-shopping-bag-line"></i>
+
+    <span class="cart-count" id="cartCount">0</span>
+
+</button>
+                    
+                    <button
+    aria-label="Account"
+    onclick="window.location.href='login.html'">
+
+    <i class="ri-user-line"></i>
+
+</button>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+<main>
+
+    <!-- Hero -->
+
+    <section class="contact-hero reveal">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+
+                CONTACT US
+
+            </p>
+
+            <h1>
+
+                We'd Love to Hear From You
+
+            </h1>
+
+            <p>
+
+                Whether you have a question about an order, our collections, or simply want to connect with us, our team is always here to assist you.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Contact -->
+
+    <section class="contact-section reveal">
+
+        <div class="container contact-grid">
+
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+
+                <h2>
+
+                    Get in Touch
+
+                </h2>
+
+                <p>
+
+                    Our Client Care team is available to assist you with product information, order enquiries, and personalised shopping support.
+
+                </p>
+
+
+
+                <div class="info-item">
+
+                    <i class="ri-map-pin-line"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Address
+
+                        </h4>
+
+                        <p>
+
+                            F-10 Markaz, Islamabad, Pakistan
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="info-item">
+
+                    <i class="ri-phone-line"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Phone
+
+                        </h4>
+
+                        <p>
+
+                            +92 300 1234567
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="info-item">
+
+                    <i class="ri-mail-line"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Email
+
+                        </h4>
+
+                        <p>
+
+                            clientcare@avenor.com
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="info-item">
+
+                    <i class="ri-time-line"></i>
+
+                    <div>
+
+                        <h4>
+
+                            Business Hours
+
+                        </h4>
+
+                        <p>
+
+                            Monday – Saturday
+
+                            <br>
+
+                            10:00 AM – 8:00 PM
+                            
+                            <br>
+
+                            Sunday 
+                            <br>
+                            12:00 PM – 6:00 PM
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Contact Form -->
+
+            <div class="contact-card">
+
+                <h2>
+
+                    Send a Message
+
+                </h2>
+
+                <p>
+
+                    Fill out the form below and we'll get back to you as soon as possible.
+
+                </p>
+
+
+
+                <div class="form-group">
+
+                    <label>
+
+                        Full Name
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name">
+
+                    <small
+                        id="nameError"
+                        class="error-message">
+
+                    </small>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+
+                        Email Address
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email">
+
+                    <small
+                        id="emailError"
+                        class="error-message">
+
+                    </small>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+
+                        Subject
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="Subject">
+
+                    <small
+                        id="subjectError"
+                        class="error-message">
+
+                    </small>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label>
+
+                        Message
+
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="6"
+                        placeholder="Write your message..."></textarea>
+
+                    <small
+                        id="messageError"
+                        class="error-message">
+
+                    </small>
+
+                </div>
+
+
+
+                <button
+                    id="sendMessageBtn"
+                    class="btn-primary">
+
+                    Send Message
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Map -->
+
+    <section class="map-section reveal">
+
+        <div class="container">
+
+            <h2>
+
+                Visit Our Studio
+
+            </h2>
+
+            <p>
+
+                Experience AVENOR in person and explore our carefully curated collections.
+
+            </p>
+
+            <iframe
+                src="https://www.google.com/maps?q=F-10+Markaz+Islamabad+Pakistan&output=embed"
+                loading="lazy">
+
+            </iframe>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FAQ -->
+
+    <section class="faq-section reveal">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <small>
+
+                    SUPPORT
+
+                </small>
+
+                <h2>
+
+                    Frequently Asked Questions
+
+                </h2>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    How long does delivery take?
+
+                    <i class="ri-add-line"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    Standard delivery usually takes 3–5 business days across Pakistan.
+
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Can I return my order?
+
+                    <i class="ri-add-line"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    Yes. Returns are accepted within 14 days of delivery in accordance with our return policy.
+
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Do you offer international shipping?
+
+                    <i class="ri-add-line"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    International shipping will be available soon.
+
+                </div>
+
+            </div>
+
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    How can I track my order?
+
+                    <i class="ri-add-line"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    Once your order has been dispatched, you will receive an email containing your tracking details.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="contact-cta reveal">
+
+        <div class="container">
+
+            <h2>
+
+                Let's Begin Your AVENOR Journey
+
+            </h2>
+
+            <p>
+
+                Whether you have a question or need styling advice, our Client Care team is here to help you every step of the way.
+
+            </p>
+
+            <a
+                href="shop.html"
+                class="btn-primary">
+
+                Explore Our Collection
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+<!-- Toast -->
+
+<div
+    id="toast"
+    class="toast">
+
+    <div class="toast-content">
+
+        <i class="ri-checkbox-circle-fill"></i>
+
+        <div>
+
+            <h4 id="toastTitle">
+
+                Success
+
+            </h4>
+
+            <p id="toastMessage">
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- ==========================================
+     SEARCH OVERLAY
+========================================== -->
+
+<div id="searchOverlay" class="search-overlay">
+
+    <div class="search-box">
+
+        <button
+            id="closeSearch"
+            class="close-search">
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+        <h2>
+
+            Search Products
+
+        </h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search AVENOR...">
+
+        <div id="searchResults">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="assets/js/products.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/wishlist.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/app.js"></script>
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+
+                    AVENOR
+
+                </a>
+
+                <p>
+
+                    Timeless luxury crafted for modern living.
+                    Thoughtfully designed pieces that blend elegance,
+                    quality, and modern sophistication.
+
+                </p>
+
+                <div class="footer-social">
+
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+
+                    <a href="#"><i class="ri-pinterest-line"></i></a>
+
+                    <a href="#"><i class="ri-facebook-circle-line"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>
+
+                    Shop
+
+                </h4>
+
+                <a href="shop.html">Women</a>
+
+                <a href="shop.html">Men</a>
+
+                <a href="shop.html">Accessories</a>
+
+                <a href="shop.html">Footwear</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>
+
+                    Customer Care
+
+                </h4>
+
+                <a href="contact.html">Contact Us</a>
+
+                <a href="#">FAQs</a>
+
+                <a href="#">Shipping</a>
+
+                <a href="#">Returns</a>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>
+
+                    Company
+
+                </h4>
+
+                <a href="about.html">About Us</a>
+
+                <a href="account.html">My Account</a>
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms & Conditions</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-newsletter">
+
+            <div>
+
+                <h3>
+
+                    Join the AVENOR Community
+
+                </h3>
+
+                <p>
+
+                    Receive exclusive collections, style inspiration and early access to new arrivals.
+
+                </p>
+
+            </div>
+
+            <form class="newsletter-form">
+
+                <input
+                    type="email"
+                    placeholder="Enter your email address">
+
+                <button type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 AVENOR. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+</body>
+
+</html>

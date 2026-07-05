@@ -1,0 +1,520 @@
+.about-hero{
+
+    padding:9rem 0 4rem;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../../images/about/about-hero.webp");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.about-hero h1{
+
+    color:#fff;
+
+}
+
+.about-hero p{
+
+    color:rgba(255,255,255,.92);
+
+}
+
+.about-hero small{
+
+    color:#F4D7B0;
+
+}
+
+
+
+/* ==========================================
+   COMMON SECTIONS
+========================================== */
+
+.story-section,
+.craft-section,
+.sustainability-section{
+
+    padding:4rem 0;
+
+}
+
+.story-grid,
+.craft-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:3rem;
+
+    align-items:center;
+
+}
+
+.story-image img,
+.craft-image img{
+
+    width:100%;
+
+    height:560px;
+
+    object-fit:cover;
+
+    border-radius:22px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.story-content small,
+.craft-content small{
+
+    display:block;
+
+    color:var(--color-primary);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:1rem;
+
+}
+
+.story-content h2,
+.craft-content h2{
+
+    margin-bottom:1.5rem;
+
+    font-size:2.3rem;
+
+}
+
+.story-content p,
+.craft-content p{
+
+    color:var(--color-text-light);
+
+    line-height:1.9;
+
+    margin-bottom:1rem;
+
+}
+
+
+
+/* ==========================================
+   PHILOSOPHY
+========================================== */
+
+.philosophy-section{
+
+    padding:4rem 0;
+
+    background:var(--color-bg-secondary);
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:4rem;
+
+}
+
+.section-title small{
+
+    display:block;
+
+    color:var(--color-primary);
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:1rem;
+
+}
+
+.philosophy-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+.philosophy-card{
+
+    background:#fff;
+
+    padding:2.5rem;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+
+}
+
+.philosophy-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.philosophy-card i{
+
+    font-size:2.4rem;
+
+    color:var(--color-primary);
+
+    margin-bottom:1.3rem;
+
+}
+
+.philosophy-card h3{
+
+    margin-bottom:1rem;
+
+}
+
+.philosophy-card p{
+
+    color:var(--color-text-light);
+
+}
+
+
+
+/* ==========================================
+   STATS
+========================================== */
+
+.stats-section{
+
+    padding:2.8rem 0;
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:2rem;
+
+    text-align:center;
+
+}
+
+.stats-grid h2{
+
+    font-size:3rem;
+
+    color:#fff;
+
+    margin-bottom:.5rem;
+
+    font-weight:500;
+
+}
+
+.stats-grid p{
+
+    color:rgba(255,255,255,.85);
+
+    font-size:1rem;
+
+    margin:0;
+
+}
+
+
+/* ==========================================
+   CTA
+========================================== */
+
+.about-cta{
+
+    padding:4rem 0;
+
+    background:var(--color-bg-secondary);
+
+    text-align:center;
+
+}
+
+.about-cta h2{
+
+    margin-bottom:1rem;
+
+}
+
+.about-cta p{
+
+    max-width:650px;
+
+    margin:0 auto 2rem;
+
+    color:var(--color-text-light);
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.story-grid,
+.craft-grid{
+
+    grid-template-columns:1fr;
+
+    gap:3rem;
+
+}
+
+.philosophy-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.features-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.stats-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.about-hero{
+
+    padding:8rem 0 5rem;
+
+}
+
+.story-content h2,
+.craft-content h2{
+
+    font-size:2rem;
+
+}
+
+.features-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.sustainability-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.quote-banner{
+
+    height:350px;
+
+}
+
+.story-image img,
+.craft-image img{
+
+    height:380px;
+
+}
+
+}
+
+/* ==========================================
+   SCROLL ANIMATION
+========================================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   QUOTE BANNER
+========================================== */
+
+.quote-banner{
+
+    height:260px;
+
+    background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url("../../images/about/quote-banner.webp");
+
+    background-size:cover;
+
+    background-position:center 55%;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    margin:4rem 0;
+
+    overflow:hidden;
+
+}
+
+.quote-overlay{
+
+    max-width:900px;
+
+    padding:0 2rem;
+
+}
+
+.quote-overlay p{
+
+    color:#fff;
+
+    font-family:var(--font-heading);
+
+    font-size:clamp(2rem,3.5vw,3rem);
+
+    line-height:1.5;
+
+    font-style:italic;
+
+    text-shadow:0 2px 12px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================
+   SUSTAINABILITY
+========================================== */
+
+.sustainability-section{
+
+    padding:4rem 0;
+
+    text-align:center;
+
+}
+
+.sustainability-text{
+
+    max-width:780px;
+
+    margin:0 auto 3rem;
+
+    line-height:1.9;
+
+    color:var(--color-text-light);
+
+}
+
+.sustainability-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:2rem;
+
+}
+
+.sustain-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:2.3rem;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+
+    transition:.35s;
+
+}
+
+.sustain-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.sustain-card i{
+
+    font-size:2.4rem;
+
+    color:var(--color-primary);
+
+    margin-bottom:1rem;
+
+}
+
+.sustain-card h3{
+
+    font-size:1.15rem;
+
+}

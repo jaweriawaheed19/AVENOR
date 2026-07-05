@@ -1,0 +1,330 @@
+/* ==========================================
+   ACCOUNT PAGE
+========================================== */
+
+.account-hero{
+
+    padding:8rem 0 2rem;
+    background:var(--color-bg-secondary);
+    text-align:center;
+
+}
+
+.account-hero h1{
+
+    margin:.75rem 0;
+
+}
+
+.account-section{
+
+    padding:2rem 0 2rem;
+
+}
+
+.account-card{
+
+    max-width:650px;
+    margin:auto;
+    background:#fff;
+    border:1px solid var(--color-border);
+    border-radius:20px;
+    padding:2.5rem;
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+}
+
+.account-card h2{
+
+    margin-bottom:.5rem;
+
+}
+
+.account-card>p{
+
+    color:var(--color-text-light);
+    margin-bottom:2rem;
+
+}
+
+
+
+/* ===========================
+   Forms
+=========================== */
+
+.form-group{
+
+    display:flex;
+    flex-direction:column;
+    margin-bottom:1.2rem;
+
+}
+
+.form-group label{
+
+    margin-bottom:.45rem;
+    font-weight:500;
+
+}
+
+.form-group input{
+
+    padding:1rem;
+    border:1px solid var(--color-border);
+    border-radius:12px;
+    transition:.3s;
+    font-size:.95rem;
+
+}
+
+.form-group input:focus{
+
+    outline:none;
+    border-color:var(--color-primary);
+
+}
+
+.form-row{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+
+}
+
+
+
+/* ===========================
+   Options
+=========================== */
+
+.account-options{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:2rem;
+
+}
+
+.account-options label{
+
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+
+}
+
+.account-options a{
+
+    text-decoration:none;
+    color:var(--color-primary);
+
+}
+
+.account-options a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+
+/* ===========================
+   Buttons
+=========================== */
+
+.account-card .btn-primary{
+
+    width:100%;
+
+}
+
+.register-link{
+
+    text-align:center;
+    margin-top:2rem;
+
+}
+
+.register-link p{
+
+    margin-bottom:1rem;
+    color:var(--color-text-light);
+
+}
+
+.register-link .btn-secondary{
+
+    width:100%;
+
+}
+
+
+
+/* ===========================
+   Divider
+=========================== */
+
+.divider{
+
+    display:flex;
+    align-items:center;
+    margin:2rem 0;
+
+}
+
+.divider::before,
+
+.divider::after{
+
+    content:"";
+    flex:1;
+    height:1px;
+    background:#ddd;
+
+}
+
+.divider span{
+
+    padding:0 1rem;
+    color:#999;
+    font-size:.9rem;
+
+}
+
+
+
+/* ===========================
+   Register Card
+=========================== */
+
+.register-card{
+
+    display:none;
+    margin-top:2rem;
+    animation:fadeUp .4s ease;
+
+}
+
+.register-card.active{
+
+    display:block;
+
+}
+
+
+
+/* ===========================
+   Continue Shopping
+=========================== */
+
+.continue-shopping{
+
+    padding:1rem 0 4rem;
+    text-align:center;
+
+}
+
+.continue-shopping .btn-primary{
+
+    padding:1rem 2.8rem;
+
+}
+
+
+
+/* ===========================
+   Validation
+=========================== */
+
+.error-message{
+
+    font-size:.8rem;
+    color:#c62828;
+    min-height:18px;
+    margin-top:.35rem;
+
+}
+
+.input-error{
+
+    border-color:#c62828 !important;
+
+}
+
+
+
+/* ===========================
+   Animation
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.account-card{
+
+    padding:2rem;
+
+}
+
+.form-row{
+
+    grid-template-columns:1fr;
+
+}
+
+.account-options{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1rem;
+
+}
+
+}
+
+/* ==========================================
+   Create Account Button Fix
+========================================== */
+
+.register-link .btn-secondary{
+
+    background: #ffffff;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    width: 100%;
+    transition: .3s;
+
+}
+
+.register-link .btn-secondary:hover{
+
+    background: var(--color-primary);
+    color: #ffffff;
+
+}

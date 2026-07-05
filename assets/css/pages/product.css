@@ -1,0 +1,353 @@
+/* ==========================================
+   PRODUCT PAGE
+========================================== */
+
+.product-page{
+
+    padding:9rem 0 6rem;
+
+    background:var(--color-background);
+
+}
+
+.product-layout{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:5rem;
+
+    align-items:start;
+
+}
+
+/* ==========================================
+   PRODUCT IMAGE
+========================================== */
+
+.product-gallery{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:2rem;
+
+    border:1px solid rgba(0,0,0,.06);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.product-gallery img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+}
+
+/* ==========================================
+   PRODUCT DETAILS
+========================================== */
+
+.product-category{
+
+    color:var(--color-light-text);
+
+    margin-bottom:.8rem;
+
+}
+
+.product-details h1{
+
+    font-size:2.8rem;
+
+    margin-bottom:1rem;
+
+    line-height:1.2;
+
+}
+
+.product-price{
+
+    margin:1.5rem 0;
+
+    font-size:2rem;
+
+    color:var(--color-primary);
+
+}
+
+.product-description{
+
+    color:var(--color-light-text);
+
+    line-height:1.9;
+
+    margin-bottom:2rem;
+
+}
+
+.product-colour{
+
+    margin-bottom:2rem;
+
+}
+
+/* ==========================================
+   RATING
+========================================== */
+
+.rating{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.8rem;
+
+    margin-bottom:1rem;
+
+}
+
+.stars{
+
+    display:flex;
+
+    gap:3px;
+
+    color:#D4A017;
+
+}
+
+/* ==========================================
+   QUANTITY
+========================================== */
+
+.quantity-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:1rem;
+
+    margin:2rem 0;
+
+}
+
+.quantity-box button{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#F5F2ED;
+
+    cursor:pointer;
+
+    font-size:1.2rem;
+
+    transition:.3s;
+
+}
+
+.quantity-box button:hover{
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+}
+
+.quantity-box span{
+
+    font-size:1.2rem;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.product-buttons{
+
+    display:flex;
+
+    gap:1rem;
+
+    margin-top:2rem;
+
+}
+
+.product-buttons .btn-primary{
+
+    flex:1;
+
+}
+
+.product-buttons .wishlist-btn{
+
+    width:56px;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#F5F2ED;
+
+    cursor:pointer;
+
+    font-size:1.3rem;
+
+    transition:.3s;
+
+}
+
+.product-buttons .wishlist-btn:hover{
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:991px){
+
+    .product-layout{
+
+        grid-template-columns:1fr;
+
+        gap:3rem;
+
+    }
+
+}
+
+/* ==========================================
+   RELATED PRODUCTS
+========================================== */
+
+.related-products{
+
+    padding:2rem 0 6rem;
+
+    background:var(--color-background);
+
+}
+
+.related-products .section-header{
+
+    text-align:center;
+
+    margin-bottom:3rem;
+
+}
+
+.related-products .section-header h2{
+
+    font-size:2.5rem;
+
+    margin-bottom:.75rem;
+
+}
+
+.related-products .section-header p{
+
+    color:var(--color-light-text);
+
+}
+
+.products-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:2rem;
+
+}
+
+.product-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.product-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.product-image img{
+
+    width:100%;
+
+    aspect-ratio:4/5;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.product-content{
+
+    padding:1.5rem;
+
+}
+
+.related-products .product-title{
+
+    font-size:1.55rem;
+
+}
+
+.related-products .product-price{
+
+    font-size:1.15rem;
+
+    margin:1rem 0;
+
+}
+
+.related-products .product-content{
+
+    padding:1.4rem;
+
+}
+
+.related-products .btn-primary{
+
+    padding:.9rem 1.2rem;
+
+    font-size:.95rem;
+
+}

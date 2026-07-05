@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Silk Scarf-Tie Blouse",
+    "category": "Women",
+    "price": 6990,
+    "image": "assets/images/products/women-shirt.png",
+    "rating": 5,
+    "badge": "New Arrival"
+  },
+  {
+    "id": 2,
+    "name": "Tailored Wide-Leg Trousers",
+    "category": "Women",
+    "price": 7490,
+    "image": "assets/images/products/women-trousers.png",
+    "rating": 5,
+    "badge": "Signature"
+  },
+  {
+    "id": 3,
+    "name": "Premium Linen Shirt",
+    "category": "Men",
+    "price": 6490,
+    "image": "assets/images/products/men-shirt.png",
+    "rating": 5,
+    "badge": "Best Seller"
+  },
+  {
+    "id": 4,
+    "name": "Tailored Pleated Trousers",
+    "category": "Men",
+    "price": 7990,
+    "image": "assets/images/products/men-trousers.png",
+    "rating": 5,
+    "badge": "Signature"
+  },
+  {
+    "id": 5,
+    "name": "Classic Leather Belt",
+    "category": "Accessories",
+    "price": 4490,
+    "image": "assets/images/products/belt.png",
+    "rating": 5,
+    "badge": "Best Seller"
+  },
+  {
+    "id": 6,
+    "name": "No. 07 – Santal & Amber",
+    "category": "Fragrance",
+    "price": 8490,
+    "image": "assets/images/products/perfume.png",
+    "rating": 5,
+    "badge": "Signature"
+  },
+  {
+    "id": 7,
+    "name": "Structured Leather Tote",
+    "category": "Bags",
+    "price": 12990,
+    "image": "assets/images/products/bag.png",
+    "rating": 5,
+    "badge": "New Arrival"
+  },
+  {
+    "id": 8,
+    "name": "Leather Penny Loafers",
+    "category": "Footwear",
+    "price": 9490,
+    "image": "assets/images/products/loafers.png",
+    "rating": 5,
+    "badge": "Best Seller"
+  }
+]
