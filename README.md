@@ -6,13 +6,14 @@ A modern luxury fashion e-commerce website built with **HTML**, **CSS**, and **J
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-Educational-blue?style=for-the-badge)
 
 ## 🌐 Live Demo
 
-[![Live Demo]](https://jiasatti.github.io/avenor-luxury-fashion-ecommerce/)
+Experience AVENOR live:
 
-## ✨ Preview
+**🔗 https://avenor-lyart.vercel.app/**
+
+## ✨ About the Project
 
 AVENOR is a fully responsive front-end e-commerce website inspired by premium luxury fashion brands. The project focuses on delivering a clean, elegant, and interactive shopping experience while showcasing modern front-end development practices without using external frameworks.
 
@@ -191,6 +192,23 @@ Potential improvements include:
 - REST API integration
 - Search suggestions
 - Multiple product images
+
+
+## 📦 Installation
+
+Clone the repository
+
+```bash
+git clone git clone https://github.com/jaweriawaheed19/AVENOR.git
+```
+
+Navigate to the project folder
+
+```bash
+cd AVENOR
+```
+
+Open `index.html` in your preferred browser.
 
 
 ## Author
