@@ -26,7 +26,6 @@ Designed with a luxury aesthetic, the website includes dynamic product browsing,
 
 - Luxury hero section
 - Featured collections
-- Best-selling products
 - Brand story
 - Newsletter subscription
 - Scroll reveal animations
@@ -42,7 +41,6 @@ Designed with a luxury aesthetic, the website includes dynamic product browsing,
 
 ### Product Details
 
-- Product gallery
 - Product information
 - Ratings
 - Quantity selector
