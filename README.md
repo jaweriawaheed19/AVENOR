@@ -5,7 +5,6 @@ A modern luxury fashion e-commerce website built with **HTML**, **CSS**, and **J
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Responsive](https://img.shields.io/badge/Responsive-Design-black?style=for-the-badge)
 ![Local Storage](https://img.shields.io/badge/Local%20Storage-Enabled-black?style=for-the-badge)
 
 ## 🌐 Live Demo
@@ -148,16 +147,6 @@ The application uses the browser's Local Storage API to maintain data between se
 | avenorLoggedIn | Login session |
 | avenorLastOrder | Previous order |
 | avenorPayment | Selected payment method |
-
-
-## 📱 Responsive Design
-
-The website is optimized for:
-
-- Desktop
-- Laptop
-- Tablet
-- Mobile
 
 
 ## 🎯 Learning Outcomes
