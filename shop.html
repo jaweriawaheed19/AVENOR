@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="assets/css/pages/wishlist.css">
 
     <link rel="stylesheet" href="assets/css/pages/shop.css">
     <link rel="stylesheet" href="assets/css/pages/search.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+
 
     <!-- Remix Icons -->
 
@@ -127,6 +128,50 @@
 
     </header>
 
+    <!-- ==========================================
+     MOBILE NAVIGATION
+========================================== -->
+
+<div class="mobile-overlay"></div>
+
+<div class="mobile-nav">
+
+    <div class="mobile-nav-header">
+
+        <a href="index.html" class="mobile-logo">
+
+            AVENOR
+
+        </a>
+
+        <button class="mobile-close">
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+    </div>
+
+    <nav class="mobile-nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="shop.html">Shop</a>
+
+        <a href="wishlist.html">Wishlist</a>
+
+        <a href="cart.html">Cart</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="login.html">Account</a>
+
+    </nav>
+
+</div>
+
     <main>
 
         <section class="shop-hero reveal">
@@ -164,6 +209,24 @@
                 <!-- Sidebar -->
 
 <aside class="shop-sidebar">
+
+    <div class="filter-header">
+
+        <h2>
+
+            Filters
+
+        </h2>
+
+        <button
+            id="closeFilters"
+            class="filter-close">
+
+            <i class="ri-close-line"></i>
+
+        </button>
+
+    </div>
 
     <!-- Categories -->
 
@@ -391,41 +454,51 @@
 
     <div class="products-top">
 
-        <p id="productCount">
+    <button
+        id="openFilters"
+        class="filter-toggle">
 
-            0 Products
+        <i class="ri-equalizer-line"></i>
 
-        </p>
+        Filters
 
-        <select id="sortProducts">
+    </button>
 
-            <option value="default">
+    <select id="sortProducts">
 
-                Sort By
+        <option value="default">
 
-            </option>
+            Sort By
 
-            <option value="low">
+        </option>
 
-                Price: Low to High
+        <option value="low">
 
-            </option>
+            Price: Low to High
 
-            <option value="high">
+        </option>
 
-                Price: High to Low
+        <option value="high">
 
-            </option>
+            Price: High to Low
 
-            <option value="name">
+        </option>
 
-                Name (A–Z)
+        <option value="name">
 
-            </option>
+            Name (A–Z)
 
-        </select>
+        </option>
 
-    </div>
+    </select>
+
+    <p id="productCount">
+
+        0 Products
+
+    </p>
+
+</div>
 
     <div class="products-grid" id="productsGrid">
 

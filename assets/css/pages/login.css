@@ -4,7 +4,7 @@
 
 .account-hero{
 
-    padding:8rem 0 2rem;
+    padding:10rem 0 2rem;
     background:var(--color-bg-secondary);
     text-align:center;
 
@@ -278,36 +278,6 @@
 
 }
 
-
-
-/* ===========================
-   Responsive
-=========================== */
-
-@media(max-width:768px){
-
-.account-card{
-
-    padding:2rem;
-
-}
-
-.form-row{
-
-    grid-template-columns:1fr;
-
-}
-
-.account-options{
-
-    flex-direction:column;
-    align-items:flex-start;
-    gap:1rem;
-
-}
-
-}
-
 /* ==========================================
    Create Account Button Fix
 ========================================== */
@@ -326,5 +296,121 @@
 
     background: var(--color-primary);
     color: #ffffff;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    .account-hero{
+
+    padding:calc(var(--header-total-height) + 3rem) 0 2rem;
+
+}
+
+.account-hero h1{
+
+    font-size:2.3rem;
+
+}
+
+.account-hero p{
+
+    max-width:95%;
+
+    margin:auto;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+.account-section{
+
+    padding:1.5rem 0 2.5rem;
+
+}
+
+.account-card{
+
+    padding:1.5rem;
+
+    border-radius:18px;
+
+}
+
+.account-card h2{
+
+    font-size:1.5rem;
+
+    margin-bottom:.4rem;
+
+}
+
+.account-card > p{
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+    margin-bottom:1.5rem;
+
+}
+
+.form-group{
+
+    margin-bottom:1rem;
+
+}
+
+.form-group input{
+
+    padding:.9rem 1rem;
+
+    font-size:.95rem;
+
+}
+
+.continue-shopping{
+
+    padding:1rem 0 3rem;
+
+}
+
+.continue-shopping .btn-primary{
+
+    width:100%;
+
+}
+
+.divider{
+
+    margin:1.5rem 0;
+
+}
+
+.register-link{
+
+    margin-top:1.5rem;
+
+}
+
+.form-row{
+
+    grid-template-columns:1fr;
+
+}
+
+.account-options{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1rem;
+
+}
 
 }

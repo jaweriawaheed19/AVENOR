@@ -53,33 +53,42 @@ function initStickyNavbar(){
 }
 
 // ==========================================
-// Navbar Navigation
+// Mobile Navigation Drawer
 // ==========================================
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const wishlistBtn = document.querySelector(".wishlist-nav-btn");
+    const menuBtn = document.querySelector(".menu-btn");
+    const mobileMenu = document.querySelector(".mobile-nav");
+    const closeBtn = document.querySelector(".mobile-close");
+    const overlay = document.querySelector(".mobile-overlay");
 
-    if (wishlistBtn) {
+    if(!menuBtn || !mobileMenu || !closeBtn || !overlay){
+        return;
+    }
 
-        wishlistBtn.addEventListener("click", () => {
+    function openMenu(){
 
-            window.location.href = "wishlist.html";
+        mobileMenu.classList.add("active");
+        overlay.classList.add("active");
 
-        });
+        document.body.style.overflow = "hidden";
 
     }
 
-    const cartBtn = document.querySelector(".cart-btn");
+    function closeMenu(){
 
-    if (cartBtn) {
+        mobileMenu.classList.remove("active");
+        overlay.classList.remove("active");
 
-        cartBtn.addEventListener("click", () => {
-
-            window.location.href = "cart.html";
-
-        });
+        document.body.style.overflow = "";
 
     }
+
+    menuBtn.addEventListener("click", openMenu);
+
+    closeBtn.addEventListener("click", closeMenu);
+
+    overlay.addEventListener("click", closeMenu);
 
 });

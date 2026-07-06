@@ -15,7 +15,7 @@
 
     margin:0 auto;
 
-    padding:0 3rem;
+    padding-inline:3rem;
 
 }
 
@@ -29,6 +29,8 @@ section{
     width:100%;
 
     padding:5rem 0;
+
+    overflow:hidden;
 
 }
 
@@ -112,6 +114,8 @@ section{
     display:grid;
 
     gap:2rem;
+
+    width:100%;
 
 }
 
@@ -226,6 +230,26 @@ section{
 
 @media(max-width:767px){
 
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+    *{
+
+        min-width:0;
+
+    }
+
+    img{
+
+        max-width:100%;
+
+        height:auto;
+
+    }
+
     .container{
 
         padding:0 1rem;
@@ -240,13 +264,13 @@ section{
 
     .grid-4{
 
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(2,minmax(0,1fr));
 
     }
 
     .grid-3{
 
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns:repeat(2,minmax(0,1fr));
 
     }
 

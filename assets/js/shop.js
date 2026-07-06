@@ -148,6 +148,16 @@ function initCategoryFilters(){
 
             applyFilters();
 
+            if(window.innerWidth <= 991){
+
+    sidebar.classList.remove("active");
+
+    overlay.classList.remove("active");
+
+    document.body.style.overflow="";
+
+}
+
         });
 
     });
@@ -175,6 +185,16 @@ function initColourFilters(){
             selectedColour = colour.dataset.colour;
 
             applyFilters();
+
+            if(window.innerWidth <= 991){
+
+    sidebar.classList.remove("active");
+
+    overlay.classList.remove("active");
+
+    document.body.style.overflow="";
+
+}
 
         });
 
@@ -243,6 +263,60 @@ function initSort(){
         }
 
         renderProducts(currentProducts);
+
+    });
+
+}
+
+// ==========================================
+// MOBILE FILTER DRAWER
+// ==========================================
+
+const openFilters = document.getElementById("openFilters");
+
+const closeFilters = document.getElementById("closeFilters");
+
+const sidebar = document.querySelector(".shop-sidebar");
+
+const overlay = document.querySelector(".filter-overlay");
+
+if(openFilters){
+
+    openFilters.addEventListener("click",()=>{
+
+        sidebar.classList.add("active");
+
+        overlay.classList.add("active");
+
+        document.body.style.overflow="hidden";
+
+    });
+
+}
+
+if(closeFilters){
+
+    closeFilters.addEventListener("click",()=>{
+
+        sidebar.classList.remove("active");
+
+        overlay.classList.remove("active");
+
+        document.body.style.overflow="";
+
+    });
+
+}
+
+if(overlay){
+
+    overlay.addEventListener("click",()=>{
+
+        sidebar.classList.remove("active");
+
+        overlay.classList.remove("active");
+
+        document.body.style.overflow="";
 
     });
 

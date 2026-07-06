@@ -143,6 +143,12 @@ placeOrderBtn.addEventListener("click", function () {
 
     }
 
+    if (!valid) {
+
+    return;
+
+}
+
     localStorage.setItem(
     "avenorLastOrder",
     JSON.stringify(checkoutCart)

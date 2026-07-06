@@ -321,56 +321,6 @@
 
 }
 
-
-
-@media(max-width:768px){
-
-.about-hero{
-
-    padding:8rem 0 5rem;
-
-}
-
-.story-content h2,
-.craft-content h2{
-
-    font-size:2rem;
-
-}
-
-.features-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.stats-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.sustainability-grid{
-
-    grid-template-columns:1fr;
-
-}
-
-.quote-banner{
-
-    height:350px;
-
-}
-
-.story-image img,
-.craft-image img{
-
-    height:380px;
-
-}
-
-}
-
 /* ==========================================
    SCROLL ANIMATION
 ========================================== */
@@ -516,5 +466,174 @@
 .sustain-card h3{
 
     font-size:1.15rem;
+
+}
+
+@media(max-width:768px){
+
+.about-hero{
+
+    padding:calc(var(--header-total-height) + 3rem) 0 4rem;
+
+}
+
+.about-hero h1{
+
+    font-size:2.3rem;
+
+}
+
+.about-hero p{
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+    max-width:95%;
+
+    margin:auto;
+
+}
+
+.story-section,
+.craft-section,
+.philosophy-section,
+.sustainability-section,
+.about-cta{
+
+    padding:3rem 0;
+
+}
+
+.story-grid,
+.craft-grid{
+
+    gap:2rem;
+
+}
+
+.story-content,
+.craft-content{
+
+    text-align:center;
+
+}
+
+.story-content h2,
+.craft-content h2{
+
+    font-size:2rem;
+
+    margin-bottom:1rem;
+
+}
+
+.story-content p,
+.craft-content p{
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+.story-image img,
+.craft-image img{
+
+    height:340px;
+
+    border-radius:18px;
+
+}
+
+.section-title{
+
+    margin-bottom:2.5rem;
+
+}
+
+.section-title h2{
+
+    font-size:2rem;
+
+}
+
+.philosophy-card{
+
+    padding:2rem 1.5rem;
+
+}
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+    gap:2rem;
+
+}
+
+.stats-grid h2{
+
+    font-size:2.4rem;
+
+}
+
+.quote-banner{
+
+    height:300px;
+
+    margin:3rem 0;
+
+}
+
+.quote-overlay{
+
+    padding:0 1.25rem;
+
+}
+
+.quote-overlay p{
+
+    font-size:1.45rem;
+
+    line-height:1.7;
+
+}
+
+.sustainability-text{
+
+    margin-bottom:2rem;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+.sustainability-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.sustain-card{
+
+    padding:2rem 1.5rem;
+
+}
+
+.about-cta h2{
+
+    font-size:2rem;
+
+}
+
+.about-cta p{
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
 
 }

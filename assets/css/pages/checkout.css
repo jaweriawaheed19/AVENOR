@@ -262,28 +262,6 @@
 
 }
 
-@media(max-width:768px){
-
-    .checkout-hero{
-
-        padding:150px 0 40px;
-
-    }
-
-    .checkout-hero h1{
-
-        font-size:2.3rem;
-
-    }
-
-    .form-row{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-
 /* ==========================================
    CHECKOUT ITEMS
 ========================================== */
@@ -347,5 +325,110 @@
     border:1px solid #C75B5B !important;
 
     background:#FFF7F7;
+
+}
+
+@media(max-width:768px){
+
+    .checkout-hero{
+
+    padding:calc(var(--header-total-height) + 3rem) 0 2.5rem;
+
+}
+
+.checkout-hero p{
+
+    max-width:95%;
+
+    margin:auto;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+    .checkout-hero h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .form-row{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .checkout-card{
+
+    padding:1.5rem;
+
+    border-radius:18px;
+
+}
+
+.order-summary{
+
+    padding:1.5rem;
+
+    border-radius:18px;
+
+}
+
+.checkout-card h2,
+.order-summary h2{
+
+    font-size:1.35rem;
+
+    margin-bottom:1.25rem;
+
+}
+
+.form-group{
+
+    margin-bottom:1rem;
+
+}
+
+.form-group input{
+
+    height:48px;
+
+    font-size:.95rem;
+
+}
+
+.payment-option{
+
+    gap:.8rem;
+
+    margin-bottom:1rem;
+
+}
+
+.checkout-item{
+
+    gap:1rem;
+
+}
+
+.checkout-item strong{
+
+    font-size:.95rem;
+
+}
+
+.summary-row{
+
+    font-size:.95rem;
+
+}
+
+#placeOrderBtn{
+
+    margin-top:1.5rem;
+
+}
 
 }

@@ -171,3 +171,105 @@
     font-weight:700;
 
 }
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .search-overlay{
+
+        padding:calc(var(--header-total-height) + 1rem) 1rem 1rem;
+
+        align-items:flex-start;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+        border-radius:18px;
+
+        padding:1.5rem;
+
+    }
+
+    .search-box h2{
+
+        font-size:1.5rem;
+
+        margin-bottom:1rem;
+
+    }
+
+    .search-box input{
+
+        height:50px;
+
+        font-size:.95rem;
+
+    }
+
+    .close-search{
+
+        top:16px;
+
+        right:16px;
+
+    }
+
+    .close-search i{
+
+        font-size:1.4rem;
+
+    }
+
+    #searchResults{
+
+        max-height:60vh;
+
+        margin-top:1rem;
+
+    }
+
+    .search-result{
+
+        gap:.8rem;
+
+        padding:.8rem;
+
+    }
+
+    .search-result img{
+
+        width:60px;
+
+        height:78px;
+
+        border-radius:8px;
+
+    }
+
+    .search-result h4{
+
+        font-size:1rem;
+
+        margin-bottom:.25rem;
+
+    }
+
+    .search-result p{
+
+        font-size:.85rem;
+
+    }
+
+    .search-result span{
+
+        font-size:.9rem;
+
+    }
+
+}
