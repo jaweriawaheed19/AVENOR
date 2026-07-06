@@ -302,3 +302,17 @@ if(toast && removedProduct){
 }
 
 );
+
+const checkoutBtn = document.getElementById("checkoutBtn");
+
+if (checkoutBtn) {
+
+    checkoutBtn.addEventListener("click", () => {
+
+        if (cart.length === 0) return;
+
+        window.location.href = "checkout.html";
+
+    });
+
+}
